@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Cake Shop Gallery</title>
+    <style>
+        body {
+            background-color: #f9e4d4; /* Soft peach background */
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #ffb6b9; /* Soft pink header */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .cake {
+            background-color: #fff;
+            margin: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: calc(33.333% - 30px);
+            text-align: center;
+        }
+        .cake img {
+            max-width: 100%;
+            height: auto;
+        }
+        .cake-info {
+            padding: 15px;
+        }
+        .cake-name {
+            font-size: 18px;
+            color: #333;
+        }
+        .cake-price {
+            font-size: 16px;
+            color: #666;
+        }
+        @media (max-width: 600px) {
+            .cake {
+                width: calc(50% - 30px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    Unique Cake Shop - Cake Gallery
+</div>
+
+<div class="gallery">
+    <!-- Cake 1 -->
+    <div class="cake">
+        <img src="img/cake1.jpg" alt="Cake Name">
+        <div class="cake-info">
+            <div class="cake-name">Chocolate Cake</div>
+            <div class="cake-price">Price :Rs.250</div>
+        </div>
+    </div>
+    <!-- Cake 2 -->
+    <div class="cake">
+        <img src="img/cake2.jpg" alt="Cake Name">
+        <div class="cake-info">
+            <div class="cake-name">Strawberry Cake</div>
+            <div class="cake-price">Price :Rs.300</div>
+        </div>
+    </div>
+	
+	<div class="cake">
+        <img src="img/cake3.jpg" alt="Cake Name">
+        <div class="cake-info">
+            <div class="cake-name">Vanilla Cake</div>
+            <div class="cake-price">Price :Rs.350</div>
+        </div>
+    </div>
+	
+	<div class="cake">
+        <img src="img/cake4.jpg" alt="Cake Name">
+        <div class="cake-info">
+            <div class="cake-name">Red Velvet Cake</div>
+            <div class="cake-price">Price :Rs.400</div>
+        </div>
+    </div>
+	
+	<div class="cake">
+        <img src="img/cake5.jpg" alt="Cake Name">
+        <div class="cake-info">
+            <div class="cake-name">Black Forest Cake</div>
+            <div class="cake-price">Price :Rs.499</div>
+        </div>
+    </div>
+	
+	<div class="cake">
+        <img src="img/cake6.jpg" alt="Cake Name">
+        <div class="cake-info">
+            <div class="cake-name">Carrot Cake</div>
+            <div class="cake-price">Price :Rs.500</div>
+        </div>
+    </div>
+	
+	<div class="cake">
+        <img src="img/cake7.jpg" alt="Cake Name">
+        <div class="cake-info">
+            <div class="cake-name">Coconut Cake</div>
+            <div class="cake-price">Price :Rs.600</div>
+        </div>
+    </div>
+	
+	<div class="cake">
+        <img src="img/cake8.jpg" alt="Cake Name">
+        <div class="cake-info">
+            <div class="cake-name">Coffee Cake</div>
+            <div class="cake-price">Price :Rs.850</div>
+        </div>
+    </div>
+	
+	<div class="cake">
+        <img src="img/cake9.jpg" alt="Cake Name">
+        <div class="cake-info">
+            <div class="cake-name">Funfetti Cake</div>
+            <div class="cake-price">Price :Rs.1000</div>
+        </div>
+    </div>
+    <!-- Add more cakes as needed -->
+</div>
+
+
+<a href="index.html" style="background-color: #e75480; text-align: center; margin-top: 10px; padding: 10px 20px; border: none; border-radius: 5px; text-decoration: none; display: inline-block; ">Back to Home</a>
+
+
+
+</body>
+</html>

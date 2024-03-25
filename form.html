@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cake Order Form</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9e4d4; /* Soft peach background */
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path d="M6 8L0 0h12z"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 12px 8px;
+    }
+    textarea {
+        resize: vertical;
+    }
+    input[type="submit"] {
+        background-color: #ffa07a; /* Light salmon */
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    input[type="submit"]:hover {
+        background-color: #ff7f50; /* Darker shade of salmon on hover */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Order Your Cake</h1>
+	<form id="orderForm" action="#" method="POST" onsubmit="return submitForm()">
+
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="customerName">Your Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+        </div>
+        <div class="form-group">
+            <label for="cakeType">Cake Type:</label>
+            <select id="cakeType" name="cakeType" required>
+                <option value="">Select</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Strawberry">Strawberry</option>
+				<option value="Chocolate">Red Velvet Cake</option>
+                <option value="Vanilla">Black Forest Cake</option>
+                <option value="Strawberry">Carrot Cake</option>
+				<option value="Chocolate">Coconut Cake</option>
+                <option value="Vanilla">Coffee Cake</option>
+                <option value="Strawberry">Funfetti Cake</option>
+                <!-- Add more options as needed -->
+            </select>
+			<script>
+    function submitForm() {
+        // Simulate form submission
+        // Here you can perform any necessary validation or data processing before submitting the form
+        
+        // Display confirmation message
+        alert("Your cake is booked!");
+        
+        // Redirect to the home page
+        window.location.href = "index.html";
+        
+        // Prevent the form from actually submitting
+        return false;
+    }
+</script>
+        </div>
+        <div class="form-group">
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="text" id="mobileNumber" name="mobileNumber" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <input type="submit" value="Submit Order">
+    </form>
+</div>
+
+</body>
+</html>
